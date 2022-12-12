@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+.nav-logo {
+    img {
+        width: 180px;
+    }
+}
+
+.bg-soul {
+    background-image: url(./assets/images/SSW_0007_background.png);
+    height: 100vh !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.btn-light-purple {
+    color: #a65bfe;
+    width: 200px;
+    background-color: #ffffffc4;
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 20px;
+    &:hover,&:focus {
+        color: #9242ee;
+    }
+}
+
+.btn-primary {
+    background-color: #9649ff;
+    border-color: #b174f7;
+    &:hover,&:focus {
+        background-color: #7d24f9;
+    }
+
+    &:disabled {
+        color: #fff;
+        background-color: #9f5ffe;
+        border-color: #a56dfe;
+    }
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+
+
+.pdt-10 {
+    padding-top: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}

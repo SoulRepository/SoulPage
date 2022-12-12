@@ -1,0 +1,49 @@
+<div class="pdt-10 d-flex h-100 text-center text-white bg-purple">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div class="header">
+        <h3 class="float-md-start mb-0 mt-2 nav-logo">
+          <img (click)="goHome()" src="assets/images/SSW_0004_Soul-Search-logo.png" alt="" class="pointer">
+        </h3>
+        <div class="input-group mb-3">
+          <span class="input-group-text prefix">
+            <img src="assets/images/SSW_0002_search-icon.png" alt="">
+          </span>
+          <input name="searchInput" [(ngModel)]="searchInput" type="text" class="form-control"
+            placeholder="Enter wallet address">
+          <span class="input-group-text postfix">
+            <button (click)="searchClicked()" class="btn btn-primary" [disabled]="!searchInput">Search</button>
+          </span>
+        </div>
+        <div>
+          <button type="button" class="btn btn-light btn-light-purple">Connect Wallet</button>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="bg-profile">
+        <div class="avatar">
+          <img src="assets/images/SSE-Website_0007_profile-picture.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <ng-container *ngFor="let image of images">
+      <div class="col-3 image-container">
+        <div class="bg-purple-box">
+          <img [src]="image" alt="">
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
